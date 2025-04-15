@@ -2,16 +2,17 @@
   display: grid;
   grid-template-columns: auto auto auto;
   background-color: #2196F3;
-  padding: 10px
 }
 
 .cell {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
+  border: 1px dotted rgba(0, 0, 0, 0.8);
   font-size: 30px;
   height: 25vmin;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #bottombar {
@@ -19,22 +20,32 @@
 }
 
 #instructions {
-  height: 5vh;
+  height: 10vh;
   background-color: white;
   padding: 0px;
   margin: 0px;
   text-align: center;
-  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+#bottombar {
+  margin-top: 20px;
 }
 
 #bottombar button {
+  border: 1px solid black;
   width: 50%;
-  /* height: 100%; */
   margin: 0;
-  padding: 0;
+  padding: 10px;
   position: relative;
   float: left;
-  font-size: 2vw
+  font-size: 2vw;
+  cursor: pointer;
+  background-color: #2196F3;
+  color: #ffffff;
 }
 
 html,
@@ -43,5 +54,3 @@ body {
   margin: 0;
   padding: 0;
 }
-
-.playable { background-color: red;}
