@@ -1,6 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 
 /**
  * This is the entrance of your React app. It renders your application
@@ -8,7 +8,7 @@ import App from './App';
  * change this file.
  */
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 /**
  * Render your application, App is the component we define in App.tsx.

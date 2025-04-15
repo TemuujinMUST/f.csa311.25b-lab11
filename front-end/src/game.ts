@@ -9,4 +9,4 @@ interface Cell {
   y: number;
 }
 
-export type { GameState, Cell }
+export type { GameState, Cell };
