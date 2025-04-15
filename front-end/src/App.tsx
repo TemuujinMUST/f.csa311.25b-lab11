@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Instructions from "./components/Instructions";
 interface GameState {
   cells: (string | null)[];
   currentPlayer: "X" | "O";
@@ -81,9 +82,7 @@ class App extends React.Component<{}, GameState> {
 
     return (
       <div>
-        <div id="instructions">
-          {winner ? `Winner: ${winner}` : `Current Player: ${currentPlayer}`}
-        </div>
+        <Instructions winner={winner} currentPlayer={currentPlayer} />
         <div id="board">
           {cells.map((cell, index) => (
             <div
